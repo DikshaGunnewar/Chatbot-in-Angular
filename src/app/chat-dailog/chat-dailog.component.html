@@ -1,5 +1,4 @@
 <div class="contianer">
-     
         <h1>Let's Chat</h1>
          <ng-container *ngFor="let message of messages | async">
             <div class="message"
@@ -7,9 +6,7 @@
               {{ message.content }}
             </div>
          </ng-container>
-          <div class=" col-md-8">
             <label for="nameField">Your Message</label>
             <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
-            <button (click)="sendMessage()">Send</button>       
-       </div>
- </div>
+            <button (click)="sendMessage()">Send</button>      
+</div>
